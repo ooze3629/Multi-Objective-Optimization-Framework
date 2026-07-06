@@ -24,7 +24,7 @@ The framework is demonstrated through a **cooperative maritime patrol planning**
 
 ## Framework Overview
 
-![Framework](figures/flowchart.png)
+![Framework](./figures/flowchart.png?raw=true)
 
 The framework consists of:
 
