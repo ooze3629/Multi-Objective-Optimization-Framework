@@ -1,104 +1,126 @@
 # Python Multi-Objective Optimization Framework
 
-A Python portfolio project for multi-objective optimization and cooperative path planning.
+A Python framework for solving **multi-objective optimization** problems using evolutionary algorithms.
 
-This repository demonstrates an optimization framework using a maritime patrol planning scenario with multiple vehicle types, including UAVs, USVs, and patrol vessels. The project focuses on building configurable simulation environments, comparing evolutionary optimization algorithms, and evaluating Pareto-front quality with standard multi-objective metrics.
+This project demonstrates a **cooperative maritime patrol planning** problem involving UAVs, USVs, and patrol vessels. The framework supports multiple optimization algorithms, automated experiment management, performance evaluation, and visualization of Pareto-optimal solutions.
 
-## Project Highlights
+---
 
-- Python-based optimization framework for cooperative path planning
-- Multi-objective optimization with evolutionary algorithms
-- Support for multiple map environments and mission-weight settings
-- Pareto-front evaluation using Hypervolume (HV), IGD+, and C-metric
-- Visualization of route plans, Pareto fronts, convergence curves, and metric comparisons
-- Large-scale experimental workflow across multiple scenarios, algorithms, and random seeds
+## Features
 
-## Algorithms
-
-The repository includes implementations or experiment integrations for:
-
-- Proposed MOGA / steady-state selection workflow
-- Genetic Algorithm (GA)-based components
+- Multi-objective optimization framework
+- Genetic Algorithm (GA)
 - NSGA-III
 - SMS-EMOA
 - Evolutionary Strategy (ES)
-- Random and greedy baselines
+- Cooperative maritime patrol planning
+- Automated experiment management
+- Pareto front evaluation
+- Hypervolume (HV), IGD+, and C-metric analysis
+- Result visualization
+
+---
 
 ## Repository Structure
 
 ```text
 .
-├── code/                 # Core Python implementation and experiment scripts
-├── data/                 # Lightweight map and scenario arrays for demonstration
-├── figures/              # Selected output figures for portfolio display
-├── README.md             # Project overview
-├── requirements.txt      # Runtime dependencies
-├── requirements-dev.txt  # Development dependencies
-├── verify.py             # Quick verification entry point
-└── LICENSE               # MIT License
+├── src/                  # Core source code
+├── data/                 # Example maps and scenario data
+├── figures/              # Sample figures for visualization
+├── public_notes/         # Public project notes
+├── README.md
+├── requirements.txt
+└── LICENSE
 ```
 
-## Example Outputs
+---
 
-### Optimization workflow
+## Framework
 
-![Flowchart](figures/flowchart.png)
+The framework consists of four major components:
 
-### Pareto-front example
+1. Environment Construction
+2. Multi-objective Optimization
+3. Performance Evaluation
+4. Visualization
 
-![Pareto Front](figures/pareto_front.png)
+The optimization process can be summarized as:
 
-### Route-planning examples
+```
+Environment
+      │
+      ▼
+Optimization Algorithms
+      │
+      ▼
+Performance Evaluation
+      │
+      ▼
+Visualization
+```
 
-![Best F1 Path](figures/path_bestF1.png)
+---
 
-![Best F2 Path](figures/path_bestF2.png)
+## Implemented Algorithms
 
-![Best F3 Path](figures/path_bestF3.png)
+- Genetic Algorithm (GA)
+- NSGA-III
+- SMS-EMOA
+- Evolutionary Strategy (ES)
+
+The framework provides a unified experimental workflow, allowing different optimization algorithms to be evaluated under identical problem settings.
+
+---
+
+## Performance Evaluation
+
+The framework includes several widely used multi-objective performance indicators:
+
+- Hypervolume (HV)
+- IGD+
+- C-metric
+
+These metrics are used to compare solution quality among different optimization algorithms.
+
+---
 
 ## Quick Start
 
-Install dependencies:
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run a quick verification:
+Run an experiment:
 
 ```bash
-python verify.py quick
+python src/experiment.py
 ```
 
-Run a small experiment:
+---
 
-```bash
-python code/experiment.py --env taiwan --tier LOWER --fes 3000 --pop 100 --seeds 10
-```
+## Example Results
 
-> Full-scale experiments can be computationally expensive. This public version keeps selected lightweight inputs and figures for demonstration. Large checkpoints, caches, logs, and full result archives are excluded.
+The repository contains example figures demonstrating:
 
-## Evaluation Metrics
+- Patrol routes
+- Pareto fronts
+- Performance comparison
+- Convergence behavior
 
-- **Hypervolume (HV)**: measures the dominated objective-space volume.
-- **IGD+**: measures the distance from an approximation set to a reference Pareto set.
-- **C-metric**: compares pairwise domination coverage between methods.
+See the **figures/** directory for sample outputs.
 
-## Scope of This Public Version
+---
 
-This repository is a public portfolio version of a graduate research project. It keeps the core implementation, lightweight scenario inputs, and selected result figures. It excludes large experiment archives, checkpoints, temporary files, local logs, route-cache files, and raw data mirrors.
+## Research Background
 
-## Tech Stack
+This project was developed as part of a master's research on **multi-objective cooperative maritime patrol planning**.
 
-- Python
-- NumPy
-- SciPy
-- Matplotlib
-- Pillow
+The objective is to optimize patrol coverage, operational cost, and cooperative efficiency for heterogeneous vehicles using evolutionary multi-objective optimization algorithms.
 
-## Author
-
-Kuan-Ting Liu
+---
 
 ## License
 
