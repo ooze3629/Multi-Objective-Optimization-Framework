@@ -1,0 +1,203 @@
+{
+  "_note": "各基地總部/母港真實經緯度,供 japan_real / philippines_real 以同一組 bbox 換算格座標。座標為 (lat, lon)。confidence: high=官方來源確認;med=轄區HQ城市為推估,建議與作者核對。",
+  "_bbox": {
+    "japan": [
+      128.0,
+      30.0,
+      146.0,
+      46.0
+    ],
+    "philippines": [
+      116.0,
+      4.5,
+      127.0,
+      21.0
+    ]
+  },
+  "japan": [
+    {
+      "name": "小樽",
+      "en": "Otaru (1st RCGHQ)",
+      "lat": 43.19,
+      "lon": 141.02,
+      "confidence": "high (JCG 2026 Annual Report, 1st RHQ Otaru official address; grid-validated)"
+    },
+    {
+      "name": "鹽竈",
+      "en": "Shiogama (2nd)",
+      "lat": 38.31,
+      "lon": 141.02,
+      "confidence": "high (JCG 2026 Annual Report, 2nd RHQ Shiogama official address; grid-validated)"
+    },
+    {
+      "name": "橫濱",
+      "en": "Yokohama (3rd)",
+      "lat": 35.45,
+      "lon": 139.64,
+      "confidence": "high (JCG 2026 Annual Report, 3rd RHQ Yokohama official address; grid-validated)"
+    },
+    {
+      "name": "名古屋",
+      "en": "Nagoya (4th)",
+      "lat": 35.09,
+      "lon": 136.87,
+      "confidence": "high (JCG 2026 Annual Report, 4th RHQ Nagoya official address; grid-validated)"
+    },
+    {
+      "name": "神戶",
+      "en": "Kobe (5th)",
+      "lat": 34.68,
+      "lon": 135.19,
+      "confidence": "high (JCG 2026 Annual Report, 5th RHQ Kobe official address; grid-validated)"
+    },
+    {
+      "name": "廣島",
+      "en": "Hiroshima/Ujina (6th)",
+      "lat": 34.35,
+      "lon": 132.46,
+      "confidence": "high (JCG 2026 Annual Report, 6th RHQ Hiroshima official address; grid-validated)"
+    },
+    {
+      "name": "北九州",
+      "en": "Kitakyushu/Moji (7th)",
+      "lat": 33.95,
+      "lon": 130.96,
+      "confidence": "high (JCG 2026 Annual Report, 7th RHQ Kitakyushu/Moji official address; grid-validated)"
+    },
+    {
+      "name": "舞鶴",
+      "en": "Maizuru (8th)",
+      "lat": 35.49,
+      "lon": 135.38,
+      "confidence": "high (JCG 2026 Annual Report, 8th RHQ Maizuru official address; grid-validated)"
+    },
+    {
+      "name": "新潟",
+      "en": "Niigata (9th)",
+      "lat": 37.92,
+      "lon": 139.07,
+      "confidence": "high (JCG 2026 Annual Report, 9th RHQ Niigata official address; grid-validated)"
+    },
+    {
+      "name": "鹿兒島",
+      "en": "Kagoshima (10th)",
+      "lat": 31.6,
+      "lon": 130.57,
+      "confidence": "high (JCG 2026 Annual Report, 10th RHQ Kagoshima official address; grid-validated)"
+    }
+  ],
+  "philippines": [
+    {
+      "name": "東北呂宋",
+      "en": "NE Luzon (HQ Aparri, Cagayan)",
+      "lat": 18.36,
+      "lon": 121.64,
+      "confidence": "high"
+    },
+    {
+      "name": "西北呂宋",
+      "en": "NW Luzon (HQ San Fernando, La Union)",
+      "lat": 16.62,
+      "lon": 120.31,
+      "confidence": "high"
+    },
+    {
+      "name": "首都區/中呂宋",
+      "en": "NCR-Central Luzon (HQ Manila Port Area)",
+      "lat": 14.59,
+      "lon": 120.96,
+      "confidence": "high"
+    },
+    {
+      "name": "南塔加洛",
+      "en": "Southern Tagalog (HQ Batangas City?)",
+      "lat": 13.75,
+      "lon": 121.03,
+      "confidence": "high (Batangas Port, Sta. Clara PPA)"
+    },
+    {
+      "name": "巴拉望",
+      "en": "Palawan (HQ Puerto Princesa)",
+      "lat": 9.74,
+      "lon": 118.74,
+      "confidence": "high"
+    },
+    {
+      "name": "比科爾",
+      "en": "Bicol (HQ Legazpi / Pilar, Sorsogon?)",
+      "lat": 13.17,
+      "lon": 123.75,
+      "confidence": "high (Legazpi, Rawis RGC)"
+    },
+    {
+      "name": "東維薩亞",
+      "en": "Eastern Visayas (HQ Tacloban)",
+      "lat": 11.24,
+      "lon": 125.0,
+      "confidence": "high"
+    },
+    {
+      "name": "西維薩亞",
+      "en": "Western Visayas (HQ Iloilo City)",
+      "lat": 10.7,
+      "lon": 122.57,
+      "confidence": "high"
+    },
+    {
+      "name": "中維薩亞",
+      "en": "Central Visayas (HQ Cebu City)",
+      "lat": 10.3,
+      "lon": 123.9,
+      "confidence": "high"
+    },
+    {
+      "name": "南維薩亞",
+      "en": "Southern Visayas (HQ Dumaguete/Negros?)",
+      "lat": 10.68,
+      "lon": 122.94,
+      "confidence": "high (Bacolod, Brgy Banago — CGDSV 2024)"
+    },
+    {
+      "name": "北民答那峨",
+      "en": "Northern Mindanao (HQ Cagayan de Oro)",
+      "lat": 8.48,
+      "lon": 124.65,
+      "confidence": "high"
+    },
+    {
+      "name": "東北民答那峨",
+      "en": "NE Mindanao (HQ Surigao City)",
+      "lat": 9.79,
+      "lon": 125.5,
+      "confidence": "high"
+    },
+    {
+      "name": "東南民答那峨",
+      "en": "SE Mindanao (HQ Davao City)",
+      "lat": 7.07,
+      "lon": 125.61,
+      "confidence": "high"
+    },
+    {
+      "name": "西南民答那峨",
+      "en": "SW Mindanao (HQ Zamboanga City)",
+      "lat": 6.91,
+      "lon": 122.08,
+      "confidence": "high"
+    },
+    {
+      "name": "南民答那峨",
+      "en": "Southern Mindanao (HQ General Santos)",
+      "lat": 6.11,
+      "lon": 125.17,
+      "confidence": "high"
+    },
+    {
+      "name": "邦薩摩洛自治區",
+      "en": "BARMM (HQ Polloc/Parang, Maguindanao)",
+      "lat": 7.37,
+      "lon": 124.28,
+      "confidence": "high"
+    }
+  ]
+}
