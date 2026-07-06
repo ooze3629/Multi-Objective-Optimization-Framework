@@ -4,12 +4,14 @@
 
 # Multi-Objective Optimization Framework
 
-A **reusable Python framework** for **multi-objective optimization** using evolutionary algorithms, demonstrated through a **cooperative maritime patrol planning** case study.
+A **reusable Python framework** for solving **multi-objective optimization** problems using evolutionary algorithms.
+
+The repository demonstrates the framework through a **cooperative maritime patrol planning** case study involving UAVs, USVs, and patrol vessels. The framework is designed to be modular and reusable for other optimization problems.
 
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)
-![Algorithms](https://img.shields.io/badge/Algorithms-GA%20%7C%20NSGA--III%20%7C%20SMS--EMOA-success)
+![Algorithms](https://img.shields.io/badge/Algorithms-GA%20%7C%20NSGA--III%20%7C%20SMS--EMOA%20%7C%20ES-success)
 ![Optimization](https://img.shields.io/badge/Multi--Objective-Optimization-blue)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
@@ -17,38 +19,30 @@ A **reusable Python framework** for **multi-objective optimization** using evolu
 
 ---
 
-## Overview
-
-This repository presents a modular optimization framework for solving complex multi-objective optimization problems.
-
-The current implementation focuses on **cooperative maritime patrol planning** involving UAVs, USVs, and patrol vessels. Although developed for this application, the optimization workflow is designed to be reusable for other multi-objective optimization problems.
-
----
-
 ## Project Highlights
 
 | Feature | Description |
 |----------|-------------|
-| Multi-objective Optimization | Simultaneous optimization of multiple conflicting objectives |
-| Evolutionary Algorithms | GA, NSGA-III, SMS-EMOA and Evolutionary Strategy |
-| Evaluation | Hypervolume (HV), IGD+, and C-metric |
-| Visualization | Patrol routes, Pareto fronts and convergence curves |
-| Research Scale | Multi-country, multi-scenario, multi-seed experiments |
+| Optimization Framework | Modular evolutionary optimization workflow |
+| Algorithms | GA, NSGA-III, SMS-EMOA, Evolutionary Strategy |
+| Evaluation | Hypervolume (HV), IGD+, C-metric |
+| Visualization | Patrol routes, Pareto fronts, convergence analysis |
+| Case Study | Cooperative maritime patrol planning |
 
 ---
 
-## Framework Architecture
+## Framework Overview
 
 <p align="center">
 <img src="assets/framework_overview.png" width="85%">
 </p>
 
-The framework consists of four major stages:
+The framework contains four major stages:
 
 1. Environment Construction
 2. Evolutionary Optimization
 3. Performance Evaluation
-4. Result Visualization
+4. Visualization
 
 ---
 
@@ -56,11 +50,11 @@ The framework consists of four major stages:
 
 ```text
 .
-├── src/                  Core implementation
-├── data/                 Example datasets and maps
-├── figures/              Result figures
-├── assets/               README resources
-├── public_notes/         Public project notes
+├── src/
+├── data/
+├── figures/
+├── assets/
+├── public_notes/
 ├── README.md
 ├── requirements.txt
 └── LICENSE
@@ -70,59 +64,64 @@ The framework consists of four major stages:
 
 ## Implemented Algorithms
 
-| Algorithm | Purpose |
-|------------|---------|
-| Genetic Algorithm (GA) | Baseline evolutionary optimization |
-| NSGA-III | Many-objective optimization |
+| Algorithm | Description |
+|-----------|-------------|
+| GA | Genetic Algorithm |
+| NSGA-III | Many-objective evolutionary optimization |
 | SMS-EMOA | Hypervolume-based optimization |
-| Evolutionary Strategy (ES) | Baseline evolutionary strategy |
+| ES | Evolutionary Strategy |
 
 ---
 
-## Example Results
+# Representative Experimental Results
 
-### Scenario Overview
-
-<p align="center">
-<img src="figures/scenarios_preview.png" width="85%">
-</p>
-
-### Pareto Front
+## Optimization Workflow
 
 <p align="center">
-<img src="figures/pareto_front.png" width="75%">
+<img src="figures/flowchart.png" width="88%">
 </p>
 
-### Representative Patrol Routes
-
-| Objective | Visualization |
-|-----------|---------------|
-| Coverage-oriented (F1) | <img src="figures/path_bestF1.png" width="360"> |
-| Cost-oriented (F2) | <img src="figures/path_bestF2.png" width="360"> |
-| Cooperation-oriented (F3) | <img src="figures/path_bestF3.png" width="360"> |
-| Pareto Solution | <img src="figures/path_nd.png" width="360"> |
-
-### Performance Evaluation
+## Representative Patrol Routes
 
 <p align="center">
-<img src="figures/convergence.png" width="80%">
+<img src="figures/representative_patrol_routes.png" width="90%">
 </p>
 
-<p align="center">
-<img src="figures/cmp_hv_curve.png" width="80%">
-</p>
+The figure above presents representative Pareto-optimal patrol routes optimized for different objectives.
 
 ---
 
-## Performance Metrics
+## Hypervolume Convergence
 
-The framework evaluates optimization quality using:
+<p align="center">
+<img src="figures/hv_convergence.png" width="90%">
+</p>
 
-- **Hypervolume (HV)**
-- **IGD+**
-- **C-metric**
+The convergence curves compare optimization performance across evolutionary algorithms over multiple independent runs.
 
-These metrics enable consistent comparison across different evolutionary algorithms.
+---
+
+## Pareto Front
+
+<p align="center">
+<img src="figures/pareto_front.png" width="80%">
+</p>
+
+The union Pareto front illustrates the trade-offs among multiple objectives.
+
+---
+
+## Performance Summary
+
+<p align="center">
+<img src="figures/metric_summary.png" width="80%">
+</p>
+
+The framework evaluates solution quality using:
+
+- Hypervolume (HV)
+- IGD+
+- C-metric
 
 ---
 
@@ -135,21 +134,21 @@ python src/experiment.py
 
 ---
 
-## Project Status
+## Research Background
 
-- Active portfolio project
-- Research-oriented optimization framework
-- Modular algorithm implementation
-- Suitable for extension to other optimization problems
+This project originates from a master's research on cooperative maritime patrol planning using evolutionary multi-objective optimization.
+
+Rather than presenting only a thesis implementation, this repository focuses on the optimization framework itself and demonstrates its application through a real-world case study.
 
 ---
 
 ## Future Work
 
 - Additional optimization algorithms
-- More benchmark problems
+- Benchmark optimization problems
 - Improved visualization modules
-- Unit testing and CI/CD support
+- Unit tests and CI/CD
+- General optimization interfaces
 
 ---
 
