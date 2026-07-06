@@ -1,53 +1,39 @@
 # Python Multi-Objective Optimization Framework
 
-A Python framework for solving **multi-objective optimization** problems using evolutionary algorithms.
+A Python framework for solving **multi-objective optimization** problems
+using evolutionary algorithms.
 
-This project demonstrates a **cooperative maritime patrol planning** problem involving UAVs, USVs, and patrol vessels. The framework supports multiple optimization algorithms, automated experiment management, performance evaluation, and visualization of Pareto-optimal solutions.
+This project demonstrates a **cooperative maritime patrol planning**
+problem involving UAVs, USVs, and patrol vessels. The framework supports
+multiple optimization algorithms, automated experiment management,
+performance evaluation, and visualization of Pareto-optimal solutions.
 
----
+> **Note:** This repository is a portfolio version prepared for software
+> engineering and algorithm development demonstration.
 
-## Features
+------------------------------------------------------------------------
 
-- Multi-objective optimization framework
-- Genetic Algorithm (GA)
-- NSGA-III
-- SMS-EMOA
-- Evolutionary Strategy (ES)
-- Cooperative maritime patrol planning
-- Automated experiment management
-- Pareto front evaluation
-- Hypervolume (HV), IGD+, and C-metric analysis
-- Result visualization
+## Project Highlights
 
----
+-   Multi-objective Optimization Framework
+-   Genetic Algorithm (GA)
+-   NSGA-III
+-   SMS-EMOA
+-   Evolutionary Strategy (ES)
+-   Cooperative Maritime Patrol Planning
+-   Automated Experiment Management
+-   Hypervolume (HV), IGD+, and C-metric Evaluation
+-   Visualization of Pareto-optimal Solutions
 
-## Repository Structure
+------------------------------------------------------------------------
 
-```text
-.
-├── src/                  # Core source code
-├── data/                 # Example maps and scenario data
-├── figures/              # Sample figures for visualization
-├── public_notes/         # Public project notes
-├── README.md
-├── requirements.txt
-└── LICENSE
-```
+# Framework
 
----
+> Replace the following placeholder with:
 
-## Framework
+`figures/flowchart.png`
 
-The framework consists of four major components:
-
-1. Environment Construction
-2. Multi-objective Optimization
-3. Performance Evaluation
-4. Visualization
-
-The optimization process can be summarized as:
-
-```
+``` text
 Environment
       │
       ▼
@@ -60,68 +46,112 @@ Performance Evaluation
 Visualization
 ```
 
----
+------------------------------------------------------------------------
 
-## Implemented Algorithms
+# Repository Structure
 
-- Genetic Algorithm (GA)
-- NSGA-III
-- SMS-EMOA
-- Evolutionary Strategy (ES)
-
-The framework provides a unified experimental workflow, allowing different optimization algorithms to be evaluated under identical problem settings.
-
----
-
-## Performance Evaluation
-
-The framework includes several widely used multi-objective performance indicators:
-
-- Hypervolume (HV)
-- IGD+
-- C-metric
-
-These metrics are used to compare solution quality among different optimization algorithms.
-
----
-
-## Quick Start
-
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
+``` text
+.
+├── src/                  Core source code
+├── data/                 Example maps and scenario data
+├── figures/              Figures used in README
+├── public_notes/         Public notes
+├── README.md
+├── requirements.txt
+└── LICENSE
 ```
 
-Run an experiment:
+------------------------------------------------------------------------
 
-```bash
+# Implemented Algorithms
+
+-   Genetic Algorithm (GA)
+-   NSGA-III
+-   SMS-EMOA
+-   Evolutionary Strategy (ES)
+
+All algorithms are evaluated under identical experimental settings to
+ensure fair comparison.
+
+------------------------------------------------------------------------
+
+# Example Results
+
+Please place the following images in this order.
+
+1.  `figures/scenarios_preview.png`
+2.  `figures/pareto_front.png`
+3.  `figures/path_bestF1.png`
+4.  `figures/path_bestF2.png`
+5.  `figures/path_bestF3.png`
+6.  `figures/path_nd.png`
+7.  `figures/convergence.png`
+8.  `figures/cmp_hv_curve.png`
+
+Example markdown:
+
+``` md
+![Scenario](figures/scenarios_preview.png)
+
+![Pareto Front](figures/pareto_front.png)
+
+![Best F1](figures/path_bestF1.png)
+
+![Best F2](figures/path_bestF2.png)
+
+![Best F3](figures/path_bestF3.png)
+
+![Pareto Solutions](figures/path_nd.png)
+
+![Convergence](figures/convergence.png)
+
+![HV Curve](figures/cmp_hv_curve.png)
+```
+
+------------------------------------------------------------------------
+
+# Performance Evaluation
+
+The framework provides built-in evaluation using:
+
+-   Hypervolume (HV)
+-   IGD+
+-   C-metric
+
+These indicators are used to compare the quality of Pareto fronts
+produced by different optimization algorithms.
+
+------------------------------------------------------------------------
+
+# Quick Start
+
+``` bash
+pip install -r requirements.txt
 python src/experiment.py
 ```
 
----
+------------------------------------------------------------------------
 
-## Example Results
+# Research Background
 
-The repository contains example figures demonstrating:
+This framework was developed for a master's research project on
+**multi-objective cooperative maritime patrol planning**.
 
-- Patrol routes
-- Pareto fronts
-- Performance comparison
-- Convergence behavior
+The objective is to optimize patrol coverage, operational cost, and
+cooperative efficiency using evolutionary multi-objective optimization
+algorithms.
 
-See the **figures/** directory for sample outputs.
+------------------------------------------------------------------------
 
----
+# Future Work
 
-## Research Background
+-   Support additional evolutionary algorithms
+-   Improve experiment automation
+-   Extend benchmark scenarios
+-   Enhance visualization modules
 
-This project was developed as part of a master's research on **multi-objective cooperative maritime patrol planning**.
+------------------------------------------------------------------------
 
-The objective is to optimize patrol coverage, operational cost, and cooperative efficiency for heterogeneous vehicles using evolutionary multi-objective optimization algorithms.
+# License
 
----
-
-## License
-
-This project is released under the MIT License.
+Released under the MIT License.
